@@ -193,6 +193,11 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   height: 100vh;
   border: 2px dotted black;
@@ -317,8 +322,6 @@ ul {
 }
 
 .profileImage img {
-  width: 100%;
-  height: 100%;
   -webkit-transform: translateX(6%) translateY(4%);
           transform: translateX(6%) translateY(4%);
 }
@@ -360,4 +363,101 @@ ul {
   padding: 15px 0;
   background-color: #000;
   color: #fff;
+}
+
+.skillsSection {
+  width: 100%;
+  padding: 2% 0;
+}
+
+.skillsSection h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.skillsContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skillItem {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillItem i {
+  font-size: 60px;
+}
+
+.portfolioSection {
+  width: 100%;
+}
+
+.portfolioSection h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+
+.projectContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.projectImage {
+  width: 50%;
+  border: 2px solid red;
+  height: 200px;
+}
+
+.projectImageContainer {
+  width: 75%;
+  height: 100%;
+}
+
+.projectDescription {
+  width: 50%;
+  border: 2px solid red;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectDescriptionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid blue;
+}
+
+.projectDescriptionText p {
+  margin: 3% 0;
 }

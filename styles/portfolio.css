@@ -1,0 +1,22 @@
+.portfolioSection {
+  width: 100%;
+}
+
+.projectContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectImage {
+  width: 50%;
+  border: 2px solid red;
+  height: 200px;
+}
+
+.projectDescription {
+  width: 50%;
+  border: 2px solid red;
+  height: 200px;
+}

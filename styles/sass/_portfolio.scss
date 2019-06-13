@@ -1,0 +1,45 @@
+.portfolioSection {
+    width: 100%;
+
+    h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        // text-align: center;
+        margin-bottom: 2%;
+    }
+}
+
+.projectContainer {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.projectImage {
+    width: 50%;
+    border: 2px solid red;
+    height: 200px;
+}
+
+.projectImageContainer {
+    width: 75%;
+    height: 100%;
+}
+
+.projectDescription {
+    width: 50%;
+    border: 2px solid red;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.projectDescriptionText {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+
+    p {
+        margin: 3% 0;
+    }
+}
