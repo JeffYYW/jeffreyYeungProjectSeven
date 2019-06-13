@@ -257,6 +257,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 7%;
 }
 
 .titleText {
@@ -277,6 +278,10 @@ ul {
 .titleText h3 {
   font-size: 24px;
   padding: 2% 0;
+}
+
+.titleText p {
+  margin-top: 3%;
 }
 
 .titleText h3:first-child {
@@ -460,4 +465,71 @@ ul {
 
 .projectDescriptionText p {
   margin: 3% 0;
+}
+
+.contactSection {
+  width: 100%;
+}
+
+.contactSection h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.contactContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialLinksContainer {
+  width: 20%;
+  border: 2px solid red;
+}
+
+form {
+  width: 80%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input[type=submit] {
+  width: 20%;
+  margin-top: 2%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: none;
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.nameAndEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+input {
+  width: 48%;
+  height: 50px;
+  padding: 2%;
+  border: 2px solid blue;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 2%;
+  padding: 2%;
 }

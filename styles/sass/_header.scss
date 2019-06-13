@@ -60,6 +60,7 @@ ul {
     height: 50%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 7%;
 }
 
 .titleText {
@@ -74,6 +75,10 @@ ul {
     h3 {
         font-size: 24px;
         padding: 2% 0;
+    }
+
+    p {
+        margin-top: 3%;
     }
 }
 

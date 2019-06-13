@@ -1,0 +1,56 @@
+.contactSection {
+    width: 100%;
+
+    h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        // text-align: center;
+    }
+}
+
+.contactContainer {
+    width: 100%;
+    display: flex;
+}
+
+.socialLinksContainer {
+    width: 20%;
+    border: 2px solid red;
+}
+
+form {
+    width: 80%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+
+    input[type=submit] {
+        width: 20%;
+        margin-top: 2%;
+        align-self: flex-end;
+        border: none;
+        padding: 15px 0;
+        background-color: #000;
+        color: #fff;
+    
+    }
+}
+
+.nameAndEmail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input {
+    width: 48%;
+    height: 50px;
+    padding: 2%;
+    border: 2px solid blue;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+}
