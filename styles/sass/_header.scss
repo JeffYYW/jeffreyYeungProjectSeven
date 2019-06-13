@@ -1,0 +1,88 @@
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 100vh;
+    border: 2px dotted black;
+    // background-color: coral;
+}
+
+.wrapper {
+    max-width: 1600px;
+    width: 80%;
+    border: 2px dashed blue;
+    margin: 0 auto;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 0;
+}
+
+ul {
+    border: 2px solid red;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.headerContentContainer {
+    width: 100%;
+    height: 90%;
+    border: 2px solid green;
+    display: flex;
+    align-items: flex-end;
+}
+
+.headerTextContainer {
+    width: 50%;
+    border: 2px solid red;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleText {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding: 2% 0;
+    }
+}
+
+.titleText h3:first-child {
+    align-self: flex-end;
+}
+
+
+.headerTextContainer button {
+    width: 25%;
+    margin-top: 10%;
+    border: none;
+    padding: 15px 0;
+    background-color: #000;
+    color: #fff;
+    // align-self: flex-end;
+}
