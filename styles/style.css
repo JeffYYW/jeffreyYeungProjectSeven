@@ -481,15 +481,42 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .socialLinksContainer {
-  width: 20%;
+  width: 25%;
   border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid blue;
+  height: 70%;
+  width: 100%;
+}
+
+.socialIcons i {
+  margin-right: 10%;
+  font-size: 24px;
 }
 
 form {
-  width: 80%;
+  width: 70%;
   border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
