@@ -375,12 +375,6 @@ ul {
   padding: 2% 0;
 }
 
-.skillsSection h2 {
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 .skillsContainer {
   width: 100%;
   display: -webkit-box;
@@ -388,9 +382,39 @@ ul {
   display: flex;
 }
 
+.skillsContent {
+  width: 50%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+}
+
+.itemsContainer {
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid green;
+}
+
 .skillItem {
-  width: 100px;
-  height: 100px;
+  width: 25%;
   border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,10 +429,32 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 
 .skillItem i {
   font-size: 60px;
+}
+
+.skillsTitle {
+  width: 50%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillsTitle h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: left;
+  border: 2px solid blue;
 }
 
 .portfolioSection {
@@ -474,6 +520,7 @@ ul {
 .contactSection h2 {
   font-size: 50px;
   text-transform: uppercase;
+  margin-bottom: 3%;
 }
 
 .contactContainer {
@@ -492,9 +539,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .socialIcons {
