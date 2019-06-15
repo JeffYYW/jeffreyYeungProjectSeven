@@ -1,6 +1,6 @@
 .skillsSection {
     width: 100%;
-    padding-bottom: 2%;
+    padding: 3% 0;
     background-color: $tertiary-color;
     position: relative;
     z-index: 1;
@@ -9,16 +9,16 @@
 .skillsContainer {
     width: 100%;
     display: flex;
-    
+    flex-direction: column;
 }
 
 .skillsContent {
-    width: 50%;
+    width: 100%;
     // border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10% 2.8%;
+    // padding: 10% 2.8%;
 }   
 
 .itemsContainer {
@@ -31,21 +31,21 @@
     flex-wrap: wrap;
     // border: 2px solid green;
     position: relative;
-    background-color: $secondary-color;
+    // background-color: $secondary-color;
     // z-index: 10;
-    padding: 3.5%;
+    // padding: 3.5%;
 }
 
-.skillsBorder {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 10px solid $primary-color;
-    z-index: -1;
-    transform: translateX(-6%) translateY(10%);
-}
+// .skillsBorder {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     border: 10px solid $primary-color;
+//     z-index: -1;
+//     transform: translateX(-6%) translateY(10%);
+// }
 
 
 .skillItem {
@@ -66,15 +66,16 @@
 }
 
 .topIcons {
-    margin-bottom: 9%;
+    margin-bottom: 5%;
 }
 
 .skillsTitle {
-    width: 50%;
+    width: 100%;
     // border: 2px solid red;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: flex-start;
+    padding-bottom: 5%;
+    // align-items: center;
 
     h2 {
         font-size: 50px;
