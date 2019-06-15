@@ -60,10 +60,6 @@
         margin-bottom: 2.5%;
     }
 
-    h3 {
-        font-size: 1.75rem;
-    }
-
     p {
         margin: 3% 0;
     }
@@ -71,4 +67,22 @@
     a {
         color: $primary-color;
     }
+}
+
+.portfolioButtons {
+    display: flex;
+    // border: 2px solid red;
+    justify-content: space-between;
+    width: 50%;
+
+    button {
+        width: 45%;
+        margin-top: 5%;
+        border: none;
+        padding: 15px 0;
+        background-color: $primary-color;
+        color: $secondary-color;
+        text-transform: uppercase;
+    }
+
 }

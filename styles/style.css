@@ -539,16 +539,32 @@ ul {
   margin-bottom: 2.5%;
 }
 
-.projectDescriptionText h3 {
-  font-size: 1.75rem;
-}
-
 .projectDescriptionText p {
   margin: 3% 0;
 }
 
 .projectDescriptionText a {
   color: #000;
+}
+
+.portfolioButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.portfolioButtons button {
+  width: 45%;
+  margin-top: 5%;
+  border: none;
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .contactSection {
