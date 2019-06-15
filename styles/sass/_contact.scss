@@ -1,8 +1,8 @@
 .contactSection {
     width: 100%;
     padding: 5% 0;
-    background-color: #000;
-    color: #fff;
+    background-color: $primary-color;
+    color: $secondary-color;
 
     h2 {
         font-size: 50px;
@@ -51,8 +51,8 @@ form {
         align-self: flex-end;
         border: none;
         padding: 15px 0;
-        background-color: #fff;
-        color: #000;
+        background-color: $secondary-color;
+        color: $primary-color;
         text-transform: uppercase;
     }
 }
@@ -68,12 +68,12 @@ input {
     height: 50px;
     padding: 2%;
     // border: 2px solid blue;
-    background-color: #000;
-    color: #fff;
+    background-color: $primary-color;
+    color: $secondary-color;
 }
 
 input::placeholder {
-    color: #fff;
+    color: $secondary-color;
 }
 
 textarea {
@@ -81,10 +81,10 @@ textarea {
     margin-top: 2%;
     padding: 2%;
     resize: none;
-    background-color: #000;
-    color: #fff;
+    background-color: $primary-color;
+    color: $secondary-color;
 }
 
-textarea::placeholder {
-    color: #fff;
+textarea::placehol{
+    color: $secondary-color;
 }

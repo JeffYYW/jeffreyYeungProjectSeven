@@ -5,7 +5,7 @@ h1, h2, h3, p, ul, li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: $secondary-color;
 }
 
 li {
@@ -19,11 +19,37 @@ img {
 
 header {
     height: 100vh;
-    background-color: #000;
+    // background-color: #000;
+    background-image: url("../assets/headerBackground.jpg");
+    background-size: cover;
     // border: 2px dotted black;
     // background-color: coral;
-    color: #fff;
+    background-position-y: 25%;
+    color: $secondary-color;
+    position: relative;
 }
+
+.headerOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-color:rgba(50, 50, 50, 0.5);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 50%, rgba(24, 24, 24, 0.1));
+    // background: linear-gradient(to right, $primary-color, $tertiary-color, transparent 20%);
+    z-index: 1;
+}
+
+// .headerOverlay2 {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background: radial-gradient(circle at center, rgba(50,50,50,0) 0, rgba(0,0,0, 1) 95%);
+//     z-index: 1;
+// }
 
 .wrapper {
     max-width: 1600px;
@@ -37,7 +63,11 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 2% 0;
+    align-items: center;
+    // padding: 2% 0;
+    height: 10%;
+    position: relative;
+    z-index: 10;
 }
 
 ul {
@@ -54,6 +84,8 @@ ul {
     // border: 2px solid green;
     display: flex;
     align-items: flex-end;
+    position: relative;
+    z-index: 10;
 }
 
 .headerTextContainer {
@@ -95,7 +127,9 @@ ul {
     margin-top: 10%;
     border: none;
     padding: 15px 0;
-    background-color: #fff;
-    color: #000;
+    background-color: $secondary-color;
+    color: $primary-color;
     // align-self: flex-end;
 }
+
+// photo credit to Tommy

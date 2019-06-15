@@ -200,8 +200,22 @@ img {
 
 header {
   height: 100vh;
-  background-color: #000;
+  background-image: url("../assets/headerBackground.jpg");
+  background-size: cover;
+  background-position-y: 25%;
   color: #fff;
+  position: relative;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0.9)), to(rgba(24, 24, 24, 0.1)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 50%, rgba(24, 24, 24, 0.1));
+  z-index: 1;
 }
 
 .wrapper {
@@ -219,7 +233,12 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 2% 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  position: relative;
+  z-index: 10;
 }
 
 ul {
@@ -242,6 +261,8 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+  z-index: 10;
 }
 
 .headerTextContainer {
@@ -318,7 +339,7 @@ ul {
 .profileImage {
   width: 65%;
   height: 100%;
-  border: 10px solid black;
+  border: 10px solid #000;
   -webkit-transform: translateY(-2.5%);
           transform: translateY(-2.5%);
 }
@@ -415,7 +436,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 10px solid black;
+  border: 10px solid #000;
   z-index: -1;
   -webkit-transform: translateX(-6%) translateY(10%);
           transform: translateX(-6%) translateY(10%);
@@ -490,6 +511,10 @@ ul {
           justify-content: space-between;
 }
 
+.projectContainer:last-child {
+  margin-bottom: 2.5%;
+}
+
 .projectImage {
   width: 45%;
   display: -webkit-box;
@@ -523,6 +548,11 @@ ul {
   display: flex;
   -ms-flex-direction: center;
       flex-direction: center;
+}
+
+.projectDescriptionText .portfolioIcons {
+  font-size: 2.5rem;
+  margin-bottom: 2.5%;
 }
 
 .projectDescriptionText h3 {
@@ -650,18 +680,6 @@ textarea {
   color: #fff;
 }
 
-textarea::-webkit-input-placeholder {
-  color: #fff;
-}
-
-textarea:-ms-input-placeholder {
-  color: #fff;
-}
-
-textarea::-ms-input-placeholder {
-  color: #fff;
-}
-
-textarea::placeholder {
+textarea::placehol {
   color: #fff;
 }
