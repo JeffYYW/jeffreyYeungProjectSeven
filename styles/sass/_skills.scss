@@ -80,7 +80,38 @@
     h2 {
         font-size: 50px;
         text-transform: uppercase;
-        text-align: left;
+        // text-align: left;
         // border: 2px solid blue;
     }
+}
+
+@media (max-width: 1000px) {
+
+    .skillsContainer {
+        align-items: center;
+    }
+
+    .skillsTitle {
+        width: initial;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .skillsContainer {
+        padding-bottom: 7.5%;
+    }
+
+    .skillsTitle h2 {
+        font-size: 2.5rem;
+    }
+
+    .skillItem {
+
+        i {
+            font-size: 50px;
+        }
+    }
+
+
 }

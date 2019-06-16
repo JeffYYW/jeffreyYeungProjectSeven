@@ -229,7 +229,7 @@ nav {
   width: 100%;
   height: 10%;
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   background-color: #000;
 }
 
@@ -429,7 +429,7 @@ ul {
 }
 
 .aboutTextContent h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   text-transform: uppercase;
 }
 
@@ -486,6 +486,62 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .profileImage {
+    width: 40%;
+    border: none;
+  }
+  .aboutTextContainer {
+    width: 100%;
+  }
+  .aboutTextContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutTextContent h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutTextContent button {
+    width: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  .profileImage {
+    width: 60%;
+  }
+  .aboutTextContainer {
+    width: 100%;
+  }
+  .aboutTextContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutTextContent h2 {
+    font-size: 2.5rem;
+  }
+  .aboutTextContent button {
+    width: 55%;
   }
 }
 
@@ -575,7 +631,29 @@ ul {
 .skillsTitle h2 {
   font-size: 50px;
   text-transform: uppercase;
-  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .skillsContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skillsTitle {
+    width: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillsContainer {
+    padding-bottom: 7.5%;
+  }
+  .skillsTitle h2 {
+    font-size: 2.5rem;
+  }
+  .skillItem i {
+    font-size: 50px;
+  }
 }
 
 .portfolioSection {
@@ -584,7 +662,7 @@ ul {
 }
 
 .portfolioSection h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   text-transform: uppercase;
   margin-bottom: 7.5%;
 }
@@ -635,9 +713,10 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: flex;
-  -ms-flex-direction: center;
-      flex-direction: center;
+}
+
+.projectDescriptionText h3 {
+  font-size: 2rem;
 }
 
 .projectDescriptionText .portfolioIcons {
@@ -671,6 +750,64 @@ ul {
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+  .projectImage {
+    width: 55%;
+  }
+  .projectDescription {
+    width: 43%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20%;
+  }
+  .projectImage {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5%;
+  }
+  .projectImageContainer {
+    width: 80%;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .projectDescriptionText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectDescriptionText h3 {
+    text-align: center;
+  }
+  .portfolioButtons {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolioSection h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolioSection h2 {
+    font-size: 2.5rem;
+  }
+  .projectDescriptionText h3 {
+    font-size: 1.8rem;
+  }
 }
 
 .contactSection {

@@ -3,7 +3,7 @@
     padding: 5% 0;
 
     h2 {
-        font-size: 50px;
+        font-size: 3.125rem;
         text-transform: uppercase;
         // text-align: center;
         margin-bottom: 7.5%;
@@ -51,9 +51,11 @@
     flex-direction: column;
     // border: 2px solid blue;
     // padding-left: 10%;
-    display: flex;
-    flex-direction: center;
     // align-items: center;
+
+    h3 {
+        font-size: 2rem;
+    }
 
     .portfolioIcons {
         font-size: 2.5rem;
@@ -84,5 +86,72 @@
         color: $secondary-color;
         text-transform: uppercase;
     }
+}
 
+@media (max-width: 1300px) {
+
+    .projectImage {
+        width: 55%;
+    }
+
+    .projectDescription {
+        width: 43%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .projectContainer {
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        margin-bottom: 20%;
+    }
+
+    .projectImage {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .projectImageContainer {
+        width: 80%;
+    }
+
+    .projectDescription {
+        width: 100%;
+    }
+    
+    .projectDescriptionText {
+        // justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .portfolioButtons {
+        width: 75%;
+    }
+    
+}
+
+
+@media (max-width: 1000px) {
+
+    .portfolioSection h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .portfolioSection h2 {
+        font-size: 2.5rem;
+    }
+
+    .projectDescriptionText h3 {
+        font-size: 1.8rem;
+    }
 }
