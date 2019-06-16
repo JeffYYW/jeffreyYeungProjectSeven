@@ -61,3 +61,48 @@
         color: $secondary-color;
     }
 }
+
+@media (max-width: 1100px) {
+    .profileImage {
+        width: 85%;
+    } 
+
+    .aboutTextContainer {
+        padding-left: initial;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aboutSectionContainer {
+        flex-direction: column;
+    }
+
+    .aboutProfileContainer {
+        width: 100%;
+        // align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .profileImage {
+        width: 40%;
+    }
+
+    .aboutTextContainer {
+        width: 100%;
+        // margin-top: 5%;
+        // justify-content: center;
+    }
+
+    .aboutTextContent {
+        // justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // h2 {
+        //     text-align: center;
+        // }
+
+    }
+}
