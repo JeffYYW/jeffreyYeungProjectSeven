@@ -803,18 +803,15 @@ ul {
   width: 50%;
 }
 
-.portfolioButtons button {
+.portfolioButtons a {
+  color: #fff;
+  padding: 20px 15px;
   width: 45%;
   margin-top: 5%;
-  border: none;
-  padding: 15px 0;
   background-color: #000;
   text-transform: uppercase;
   color: #fff;
-}
-
-.portfolioButtons button a {
-  color: #fff;
+  text-align: center;
 }
 
 @media (max-width: 1300px) {
