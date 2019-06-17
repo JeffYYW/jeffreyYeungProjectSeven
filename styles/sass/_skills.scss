@@ -12,6 +12,22 @@
     flex-direction: column;
 }
 
+.skillsTitle {
+    width: 100%;
+    // border: 2px solid red;
+    display: flex;
+    // justify-content: flex-start;
+    padding-bottom: 5%;
+    // align-items: center;
+
+    h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        // text-align: left;
+        // border: 2px solid blue;
+    }
+}
+
 .skillsContent {
     width: 100%;
     // border: 2px solid red;
@@ -36,16 +52,6 @@
     // padding: 3.5%;
 }
 
-// .skillsBorder {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     border: 10px solid $primary-color;
-//     z-index: -1;
-//     transform: translateX(-6%) translateY(10%);
-// }
 
 
 .skillItem {
@@ -63,27 +69,60 @@
     i {
         font-size: 80px;
     }
+
+    i:hover,
+    i:focus {
+        font-size: 80px;
+        transition: all 0.3s;
+        transform: scale(1.2);
+    }
 }
 
 .topIcons {
     margin-bottom: 5%;
 }
 
-.skillsTitle {
-    width: 100%;
-    // border: 2px solid red;
-    display: flex;
-    // justify-content: flex-start;
-    padding-bottom: 5%;
-    // align-items: center;
-
-    h2 {
-        font-size: 50px;
-        text-transform: uppercase;
-        // text-align: left;
-        // border: 2px solid blue;
-    }
+.htmlIcon:hover,
+.htmlIcon:focus {
+    color: #f1662b; 
 }
+
+.cssIcon:hover,
+.cssIcon:focus {
+    color: #28a9e0;
+}
+
+.jsIcon:hover,
+.jsIcon:focus {
+    color:#e6c61d;
+}
+
+.sassIcon:hover,
+.sassIcon:focus {
+    color:#c66394;
+}
+
+.jqueryIcon:hover,
+.jqueryIcon:focus {
+    color: #0865a7;
+}
+
+.reactIcon:hover,
+.reactIcon:focus {
+    color: #00d4f4;
+}
+
+.githubIcon:hover,
+.githubIcon:focus {
+    color: #f5c4b3;
+}
+
+.vscodeIcon:hover,
+.vscodeIcon:focus {
+    color: #0076c6;
+}
+
+
 
 @media (max-width: 1000px) {
 

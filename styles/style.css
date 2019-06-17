@@ -620,6 +620,19 @@ ul {
           flex-direction: column;
 }
 
+.skillsTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.skillsTitle h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
 .skillsContent {
   width: 100%;
   display: -webkit-box;
@@ -672,21 +685,57 @@ ul {
   font-size: 80px;
 }
 
+.skillItem i:hover,
+.skillItem i:focus {
+  font-size: 80px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .topIcons {
   margin-bottom: 5%;
 }
 
-.skillsTitle {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 5%;
+.htmlIcon:hover,
+.htmlIcon:focus {
+  color: #f1662b;
 }
 
-.skillsTitle h2 {
-  font-size: 50px;
-  text-transform: uppercase;
+.cssIcon:hover,
+.cssIcon:focus {
+  color: #28a9e0;
+}
+
+.jsIcon:hover,
+.jsIcon:focus {
+  color: #e6c61d;
+}
+
+.sassIcon:hover,
+.sassIcon:focus {
+  color: #c66394;
+}
+
+.jqueryIcon:hover,
+.jqueryIcon:focus {
+  color: #0865a7;
+}
+
+.reactIcon:hover,
+.reactIcon:focus {
+  color: #00d4f4;
+}
+
+.githubIcon:hover,
+.githubIcon:focus {
+  color: #f5c4b3;
+}
+
+.vscodeIcon:hover,
+.vscodeIcon:focus {
+  color: #0076c6;
 }
 
 @media (max-width: 1000px) {
