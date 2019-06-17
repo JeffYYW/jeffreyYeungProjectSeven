@@ -184,6 +184,13 @@ h1, h2, h3, p, ul, li {
   padding: 0;
 }
 
+i,
+li,
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -260,6 +267,11 @@ ul {
   text-transform: uppercase;
 }
 
+ul a:hover,
+ul a:focus {
+  color: #f58c3a;
+}
+
 .headerContentContainer {
   width: 100%;
   height: 90%;
@@ -299,6 +311,7 @@ ul {
 
 .titleText h1 {
   font-size: 3.75rem;
+  color: #f58c3a;
 }
 
 .titleText h3 {
@@ -328,12 +341,21 @@ ul {
 
 .socialHeader i {
   font-size: 40px;
+  color: #f58c3a;
+}
+
+.socialHeader i:hover,
+.socialHeader i:focus {
+  color: #F1A933;
+}
+
+@media (max-width: 1200px) {
+  header {
+    background-position-x: 75%;
+  }
 }
 
 @media (max-width: 900px) {
-  header {
-    background-position-x: 50%;
-  }
   nav ul {
     width: 100%;
   }
@@ -342,7 +364,7 @@ ul {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   header {
     background-position-x: 75%;
   }
@@ -365,7 +387,7 @@ ul {
   }
   .headerTextContainer {
     width: 100%;
-    height: 60%;
+    height: 38%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -842,6 +864,12 @@ ul {
   color: #000;
 }
 
+.projectDescriptionText a:hover,
+.projectDescriptionText a:focus {
+  background-color: #f58c3a;
+  color: #000;
+}
+
 .portfolioButtons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,9 +994,22 @@ ul {
   width: 100%;
 }
 
+.socialIcons li:first-child {
+  text-transform: none;
+}
+
 .socialIcons i {
   margin-right: 10%;
   font-size: 24px;
+}
+
+.socialIcons a:hover,
+.socialIcons a:focus,
+.socialIcons i:hover,
+.socialIcons i:focus,
+.socialIcons li:hover,
+.socialIcons li:focus {
+  color: #f58c3a;
 }
 
 form {
@@ -989,7 +1030,7 @@ form input[type=submit] {
       align-self: flex-end;
   border: none;
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #f58c3a;
   color: #000;
   text-transform: uppercase;
 }
@@ -1011,6 +1052,8 @@ input {
   border: 1px solid #fff;
   background-color: #000;
   color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 input::-webkit-input-placeholder {
@@ -1037,6 +1080,15 @@ textarea {
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border: 1px solid #f58c3a;
 }
 
 textarea::-webkit-input-placeholder {

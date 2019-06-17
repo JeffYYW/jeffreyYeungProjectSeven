@@ -74,6 +74,12 @@
     a {
         color: $primary-color;
     }
+
+    a:hover,
+    a:focus {
+        background-color: $accent-color;
+        color: $primary-color;
+    }
 }
 
 .portfolioButtons {
@@ -97,7 +103,7 @@
             padding: 20px 15px;
             width: 45%;
             margin-top: 5%;
-            background-color: $primary-color;
+            background-color: $primary-color;;
             text-transform: uppercase;
             color: $secondary-color;
             text-align: center;
