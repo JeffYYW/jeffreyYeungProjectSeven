@@ -67,6 +67,12 @@ form {
         background-color: $accent-color;;
         color: $primary-color;
         text-transform: uppercase;
+        transition: all 0.3s;
+    }
+
+    input[type=submit]:hover,
+    input[type=submit]:focus {
+        background-color: #F1A933;
     }
 }
 
