@@ -53,6 +53,11 @@
     // padding-left: 10%;
     // align-items: center;
 
+    span {
+        text-decoration: underline;
+        color: black;
+    }
+
     h3 {
         font-size: 2rem;
     }
@@ -83,8 +88,12 @@
         border: none;
         padding: 15px 0;
         background-color: $primary-color;
-        color: $secondary-color;
         text-transform: uppercase;
+        color: $secondary-color;
+
+        a {
+            color: $secondary-color;
+        }
     }
 }
 

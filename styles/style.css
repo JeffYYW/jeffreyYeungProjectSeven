@@ -771,6 +771,11 @@ ul {
           flex-direction: column;
 }
 
+.projectDescriptionText span {
+  text-decoration: underline;
+  color: black;
+}
+
 .projectDescriptionText h3 {
   font-size: 2rem;
 }
@@ -804,8 +809,12 @@ ul {
   border: none;
   padding: 15px 0;
   background-color: #000;
-  color: #fff;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.portfolioButtons button a {
+  color: #fff;
 }
 
 @media (max-width: 1300px) {
