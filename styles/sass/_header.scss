@@ -23,6 +23,14 @@ img {
     height: 100%;
 }
 
+.box-shadow {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+    &:active {
+        transform: translateX(5px) translateY(5px);
+    }
+}
+
 header {
     height: 100vh;
     // background-color: #000;

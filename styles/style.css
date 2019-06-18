@@ -205,6 +205,16 @@ img {
   height: 100%;
 }
 
+.box-shadow {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-shadow:active {
+  -webkit-transform: translateX(5px) translateY(5px);
+          transform: translateX(5px) translateY(5px);
+}
+
 header {
   height: 100vh;
   background-image: url("../assets/headerBackground.jpg");
@@ -785,12 +795,19 @@ ul a:focus {
           justify-content: space-between;
 }
 
+.reverseFlex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .projectContainer:last-child {
   margin-bottom: 2.5%;
 }
 
 .projectImage {
-  width: 45%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -802,13 +819,18 @@ ul a:focus {
 }
 
 .projectDescription {
-  width: 50%;
+  width: 40%;
+  padding: 0 1%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projectDescriptionText {
@@ -837,6 +859,7 @@ ul a:focus {
 
 .projectDescriptionText p {
   margin: 3% 0;
+  line-height: 1.4rem;
 }
 
 .projectDescriptionText a {
@@ -856,7 +879,7 @@ ul a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 75%;
 }
 
 .portfolioButtons a {
@@ -867,15 +890,6 @@ ul a:focus {
   background-color: #000;
   text-transform: uppercase;
   text-align: center;
-}
-
-@media (max-width: 1300px) {
-  .projectImage {
-    width: 55%;
-  }
-  .projectDescription {
-    width: 43%;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -904,11 +918,9 @@ ul a:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  .projectDescriptionText h3 {
+  .projectDescriptionText h3,
+  .projectDescriptionText p {
     text-align: center;
-  }
-  .portfolioButtons {
-    width: 75%;
   }
 }
 
@@ -926,7 +938,7 @@ ul a:focus {
     font-size: 1.8rem;
   }
   .portfolioButtons {
-    width: 85%;
+    width: 100%;
   }
 }
 
