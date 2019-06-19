@@ -6,16 +6,12 @@
 
 .aboutSectionContainer {
     width: 100%;
-    // height: 100%;
     display: flex;
 }
 
 .aboutProfileContainer {
     width: 50%;
-    // border: 2px solid blue;
     display: flex;
-    // justify-content: center;
-    
 }
 
 .profileImage {
@@ -31,7 +27,6 @@
 
 .aboutTextContainer {
     width: 50%;
-    // border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -40,12 +35,10 @@
 }
 
 .aboutTextContent {
-    // border: 2px solid red;
 
     h2 {
         font-size: 3.125rem;
         text-transform: uppercase;
-        // text-align: center;
     }
 
     p {
@@ -56,7 +49,6 @@
 
     a {
         color: $secondary-color;
-        // border: 2px solid red;
         display: block;
         padding: 20px 15px;
         width: 45%;
@@ -73,6 +65,10 @@
         background-color: $accent-color;
     }
 }
+
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 
 @media (max-width: 1100px) {
     .profileImage {
@@ -91,7 +87,6 @@
 
     .aboutProfileContainer {
         width: 100%;
-        // align-items: center;
         justify-content: center;
         margin-bottom: 5%;
     }

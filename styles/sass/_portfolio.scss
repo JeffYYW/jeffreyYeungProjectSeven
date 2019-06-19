@@ -5,7 +5,6 @@
     h2 {
         font-size: 3.125rem;
         text-transform: uppercase;
-        // text-align: center;
         margin-bottom: 7.5%;
     }
 }
@@ -14,7 +13,6 @@
     width: 100%;
     display: flex;
     margin-bottom: 10%;
-    // border: 2px solid blue;
     display: flex;
     justify-content: space-between;
 }
@@ -29,11 +27,7 @@
 
 .projectImage {
     width: 50%;
-    // border: 2px solid red;
-    // height: 200px;
     display: flex;
-    // justify-content: flex-end;
-
 }
 
 
@@ -46,7 +40,6 @@
     width: 40%;
     padding: 0 1%;
     margin: 0 auto;
-    // border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,9 +48,6 @@
 .projectDescriptionText {
     display: flex;
     flex-direction: column;
-    // border: 2px solid blue;
-    // padding-left: 10%;
-    // align-items: center;
 
     span {
         text-decoration: underline;
@@ -76,7 +66,6 @@
     p {
         margin: 3% 0;
         line-height: 1.4rem;
-        // text-align: center;
     }
 
     a {
@@ -92,22 +81,11 @@
 
 .portfolioButtons {
     display: flex;
-    // border: 2px solid red;
     justify-content: space-between;
     width: 75%;
 
-    // button {
-    //     width: 45%;
-    //     margin-top: 5%;
-    //     border: none;
-    //     padding: 15px 0;
-    //     background-color: $primary-color;
-    //     text-transform: uppercase;
-    //     color: $secondary-color;
-
         a {
             color: $secondary-color;
-            // border: 2px solid red;
             padding: 20px 15px;
             width: 45%;
             margin-top: 5%;
@@ -115,26 +93,13 @@
             text-transform: uppercase;
             text-align: center;
         }
-    // }
 }
 
-@media (max-width: 1300px) {
-
-    // .projectImage {
-    //     width: 55%;
-    // }
-
-    // .projectDescription {
-    //     width: 43%;
-    // }
-}
 
 @media (max-width: 1200px) {
 
     .projectContainer {
         flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
         margin-bottom: 20%;
     }
 
@@ -153,21 +118,18 @@
     }
     
     .projectDescriptionText {
-        // justify-content: center;
         align-items: center;
 
         h3,
         p {
             text-align: center;
         }
-    }
-
-    // .portfolioButtons {
-    //     width: 75%;
-    // }
-    
+    }  
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 
 @media (max-width: 1000px) {
 
